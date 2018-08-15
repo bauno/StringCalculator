@@ -1,0 +1,13 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="StringCalculator.Core.fs" />
+    <Compile Include="StringCalculator.Core.Main.fs" />
+    <Compile Include="Properties\Assemblyinfo.fs" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Chessie" Version="0.6.0" />
+  </ItemGroup>
+</Project>
