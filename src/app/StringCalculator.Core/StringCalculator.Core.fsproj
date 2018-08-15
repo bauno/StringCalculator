@@ -5,7 +5,7 @@
   <ItemGroup>
     <Compile Include="StringCalculator.Core.fs" />
     <Compile Include="StringCalculator.Core.Main.fs" />
-    <Compile Include="Properties\Assemblyinfo.fs" />
+    <Compile Include="Properties\AssemblyInfo.fs" />
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="Chessie" Version="0.6.0" />
