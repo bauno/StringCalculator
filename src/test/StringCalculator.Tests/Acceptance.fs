@@ -3,7 +3,6 @@ module Tests.Acceptance
 open Acceptance.Steps
 open NUnit.Framework
 
-
 [<SetUp>]
 let init() =
     res <- None
@@ -55,3 +54,6 @@ let ``I can use an arbitrary number of delimiters of any length``() =
 let ``I can do it all``() =
     ``Given I have entered`` "//[**][%%%][$]\n2**2%%%3$4%%%1001$2000**3" ``into the calculator``
     ``Then the result is`` 14
+
+[<EntryPoint>]
+let main argv = 0
