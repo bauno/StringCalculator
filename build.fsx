@@ -18,7 +18,8 @@ Target.create "Clean" (fun _ ->
 
 Target.create "Build" (fun _ ->
     AssemblyInfoFile.createFSharp "./src/app/StringCalculator.Core/Properties/AssemblyInfo.fs"
-        [AssemblyInfo.InternalsVisibleTo "StringCalculator.Tests" ]
+        [AssemblyInfo.InternalsVisibleTo "StringCalculator.Tests";
+         AssemblyInfo.InternalsVisibleTo "StringCalculator.Tests.Xunit"]
     !! "src/app/**/*.fsproj"
     |> Seq.iter (DotNet.build id)
 )
